@@ -1,10 +1,7 @@
 {
-    "name": "My plugin",
-    "version": "0.0.1",
-    "description": "Description of my_plugin.",
-    "author_name": "Me",
-    "author_url": "https://mywebsite.me",
-    "plugin_url": "https://github.com/my_name/my_plugin",
-    "tags": "cat, template, example",
-    "thumb": "https://raw.githubusercontent.com/my_repo_path/my_plugin.png"
+    "name": "Mycroft Cat",
+    "description": "Makes possible the cat to be able to speak.",
+    "author_name": "Pazoff",
+    "tags": "Mycroft,Speech,Voice",
+    "version": "0.0.1"
 }
