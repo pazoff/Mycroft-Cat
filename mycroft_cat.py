@@ -2,6 +2,7 @@ import os
 from cat.mad_hatter.decorators import hook
 import subprocess
 from datetime import datetime
+from threading import Thread
 
 try:
     import mycroft_mimic3_tts
@@ -16,14 +17,27 @@ except ImportError as err:
         print(f"Error installing Mycroft Mimic3 TTS: {e}")
 
 
+# Function to run Mimic3 process in the background
+def run_mimic3_process(command, output_filename, cat):
+    # Open the output file for writing in binary mode
+    with open(output_filename, "wb") as output_file:
+        # Start the Mimic3 process in the background
+        mimic3_process = subprocess.Popen(command, stderr=subprocess.DEVNULL, stdout=output_file.fileno())
+        # Wait for the Mimic3 process to finish
+        mimic3_process.wait()
+
+    # Generate the audio player HTML and send it as a chat message
+    mycroft_audio_player = "<audio controls autoplay><source src='" + output_filename + "' type='audio/wav'>Your browser does not support the audio tag.</audio>"
+    cat.send_ws_message(content=mycroft_audio_player, msg_type='chat')
+
+
+# Hook function that runs before sending a message
 @hook
 def before_cat_sends_message(final_output, cat):
     # Get the current date and time
     current_datetime = datetime.now()
-
     # Format the date and time to use as part of the filename
     formatted_datetime = current_datetime.strftime("%Y%m%d_%H%M%S")
-
     # Specify the folder path
     folder_path = "/admin/assets/voice"
 
@@ -34,21 +48,16 @@ def before_cat_sends_message(final_output, cat):
     # Construct the output file name with the formatted date and time
     output_filename = os.path.join(folder_path, f"voice_{formatted_datetime}.wav")
 
-    # Get the message sent by LLM    
+    # Get the message sent by LLM
     message = final_output["content"]
 
     # Specify the Mimic3 command
     voice = "en_US/ljspeech_low"
     command = ["mimic3", "--cuda", "--voice", voice, message + "."]
 
-    # Open the file for writing in binary mode
-    with open(output_filename, "wb") as output_file:
-        # Run the subprocess and redirect the standard output to the file
-        mimic3_process = subprocess.run(command, stderr=subprocess.DEVNULL, stdout=output_file.fileno())
+    # Run the run_mimic3_process function in a separate thread
+    mimic3_thread = Thread(target=run_mimic3_process, args=(command, output_filename, cat))
+    mimic3_thread.start()
 
-    mycroft_audio_player = "<audio controls autoplay><source src='" + output_filename + "' type='audio/wav'>Your browser does not support the audio tag.</audio>"
-
-    # Send mycroft_audio_player to the user
-    cat.send_ws_message(content=mycroft_audio_player, msg_type='chat')
-
+    # Return the final output
     return final_output
