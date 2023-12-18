@@ -3,5 +3,7 @@
     "description": "Makes possible the cat to be able to speak.",
     "author_name": "Pazoff",
     "tags": "Mycroft,Speech,Voice",
+    "plugin_url": "https://github.com/pazoff/Mycroft-Cat",
+    "thumb": "https://github.com/pazoff/Mycroft-Cat/blob/main/Mimic_color_600px.png?raw=true",
     "version": "0.0.1"
 }
