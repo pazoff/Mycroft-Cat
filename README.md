@@ -5,6 +5,7 @@
 A plugin that makes possible the [Cheshire Cat](https://github.com/cheshire-cat-ai) to be able to speak.
 
 ## This plugin uses Mycroft Mimic 3 for voice synthesis on your computer
+<img src="https://github.com/pazoff/Mycroft-Cat/blob/main/Mimic_color_600px.png?raw=true" alt="Mimic 3" width="12%">
 
  - **Mimic 3:** [Documentation](https://mycroft-ai.gitbook.io/docs/mycroft-technologies/mimic-tts/mimic-3)
 
