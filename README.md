@@ -17,6 +17,6 @@ A plugin that makes possible the [Cheshire Cat](https://github.com/cheshire-cat-
 3. Enable the plugin from the Plugins menu of the Cheshire Cat dashboard
 
 ## License
-GPL License
+GPL3
 
 
