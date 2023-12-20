@@ -16,9 +16,12 @@ A plugin that makes possible the [Cheshire Cat](https://github.com/cheshire-cat-
 <img src="https://raw.githubusercontent.com/pazoff/Mycroft-Cat/main/cat-screenshot.png" alt="Cheshire Cat" width="60%">
 
  ## Getting Started
-1. Download ZIP or `git clone https://github.com/pazoff/Mycroft-Cat.git`
-2. Extract the archive or copy the cloned folder to the Plugins folder of your cheshire cat installation
-3. Enable the plugin from the Plugins menu of the Cheshire Cat dashboard
+1. **Install the Cheshire Cat** from https://github.com/cheshire-cat-ai/local-cat
+2. **Download ZIP** or `git clone https://github.com/pazoff/Mycroft-Cat.git`
+2. Extract the archive or copy the cloned folder to the Plugins folder of your cheshire cat installation or **upload via Plugins menu of the Cheshire Cat dashboard.**
+3. **Enable the plugin** from the Plugins menu of the Cheshire Cat dashboard.
+4. From the **options of the plugin** you can select **diffrent voice** for the text reader.
+5. The plugin **synthesize the speech on your computer**, so it may take some time after you receive a message from the LLM **depending on the hardware** of your computer.  
 
 ## License
 GPL3
