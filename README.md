@@ -12,6 +12,8 @@ A plugin that makes possible the [Cheshire Cat](https://github.com/cheshire-cat-
  - **Mimic 3:** [Documentation](https://mycroft-ai.gitbook.io/docs/mycroft-technologies/mimic-tts/mimic-3)
 
  - [Voice Demo](https://github.com/pazoff/Mycroft-Cat/raw/main/voice_demo.wav)
+ 
+<img src="https://raw.githubusercontent.com/pazoff/Mycroft-Cat/main/cat-screenshot.png" alt="Cheshire Cat" width="60%">
 
  ## Getting Started
 1. Download ZIP or `git clone https://github.com/pazoff/Mycroft-Cat.git`
