@@ -29,6 +29,8 @@ A plugin that makes possible the [Cheshire Cat](https://github.com/cheshire-cat-
  #### Voice Demo
  - [Alice Voice Demo](voice_demo.wav)
  - [Eve Voice Demo](voice_demo1.wav)
+ - [Riccardo - Italian Voice Demo](voice_demo_italian.wav)
+ - [Nikolaev - Russian Voice Demo](voice_demo_russian.wav)
 
 ## License
 GPL3
