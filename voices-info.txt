@@ -1,0 +1,12 @@
+# Installed voices
+# Alice: --voice en_US/vctk_low --speaker p303 - English
+# Eve: --voice en_US/ljspeech_low --speaker None - English
+# Daniel: --voice en_US/hifi-tts_low --speaker 6097 - English
+# Emily: --voice en_US/hifi-tts_low --speaker 92 - English
+# Angelina: --voice it_IT/mls_low --speaker 8384 - Italian
+# Dave: --voice en_US/cmu-arctic_low --speaker aew - English
+# Nikolaev: --voice ru_RU/multi_low --speaker nikolaev - Russian
+# Riccardo: --voice it_IT/riccardo-fasol_low --speaker None - Italian
+
+# More voices available at:
+# https://mycroftai.github.io/mimic3-voices/
