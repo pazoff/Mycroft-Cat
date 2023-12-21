@@ -26,6 +26,9 @@ A plugin that makes possible the [Cheshire Cat](https://github.com/cheshire-cat-
  ## How Mycroft Cat Plugin Works
   - Read the [**How Mycroft Cat Plugin Works**](How-Mycroft-Cat-Plugin-Works.md) guide.
 
+ ## What voices can I use?
+ - Refer to the [installed](voices-info.txt) voices (voices-info.txt).
+
 ## License
 GPL3
 
