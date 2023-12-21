@@ -23,7 +23,7 @@ A plugin that makes possible the [Cheshire Cat](https://github.com/cheshire-cat-
 4. From the **options of the plugin** you can select **diffrent voice** for the text reader.
 5. The plugin **synthesize the speech on your computer**, so it may take some time after you receive a message from the LLM **depending on the hardware** of your computer.  
 
- ## How Mycroft Cat Plugin Works
+ ## How Mycroft Cat Plugin Works?
   - Read the [**How Mycroft Cat Plugin Works**](How-Mycroft-Cat-Plugin-Works.md) guide.
 
  ## What voices can I use?
