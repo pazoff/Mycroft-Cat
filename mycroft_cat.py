@@ -6,19 +6,6 @@ import subprocess
 from datetime import datetime
 from threading import Thread
 
-try:
-    import mycroft_mimic3_tts
-except ImportError as err:
-    print(f"Error importing Mycroft Mimic3 TTS: {err}")
-    print("Attempting to install Mycroft Mimic3 TTS...")
-
-    try:
-        subprocess.run(['pip', 'install', 'mycroft-mimic3-tts[all]'], check=True)
-        print("Mycroft Mimic3 TTS has been successfully installed.")
-    except subprocess.CalledProcessError as e:
-        print(f"Error installing Mycroft Mimic3 TTS: {e}")
-
-
 # Settings
 
 # Select box

@@ -2,6 +2,8 @@
 
 [![awesome plugin](https://custom-icon-badges.demolab.com/static/v1?label=&message=awesome+plugin&color=383938&style=for-the-badge&logo=cheshire_cat_ai)](https://)  
 
+Turn ★ into ⭐ (top-right corner) if you like the project!
+
 <img src="https://raw.githubusercontent.com/cheshire-cat-ai/.github/main/profile/ccat_art.png" alt="Cheshire Cat" width="50%">
 
 A plugin that makes possible the [Cheshire Cat](https://github.com/cheshire-cat-ai) to be able to speak.

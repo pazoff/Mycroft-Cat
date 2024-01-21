@@ -1,3 +1,1 @@
-# The plugin installs mimic3 python package in the cheshire_cat_core container
-# pip install mycroft-mimic3-tts[all] - Support for all languages
-# More information at https://mycroft-ai.gitbook.io/docs/mycroft-technologies/mimic-tts/mimic-3
+mycroft-mimic3-tts[all]
