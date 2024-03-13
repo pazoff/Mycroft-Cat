@@ -5,6 +5,7 @@ from enum import Enum
 import subprocess
 from datetime import datetime
 from threading import Thread
+import re
 
 # Settings
 
@@ -30,6 +31,12 @@ class MycroftCatSettings(BaseModel):
 def settings_schema():
     return MycroftCatSettings.schema()
 
+def has_cyrillic(text):
+    # Regular expression to match Cyrillic characters
+    cyrillic_pattern = re.compile('[\u0400-\u04FF]+')
+    
+    # Check if any Cyrillic character is present in the text
+    return bool(cyrillic_pattern.search(text))
 
 # Function to run Mimic3 process in the background
 def run_mimic3_process(command, output_filename, cat):
@@ -56,6 +63,9 @@ def build_mimic_command(llm_message: str, cat):
     # Check if selected_voice is None or not in the specified list
     if selected_voice not in ["Alice", "Nikolaev", "Daniel", "Angelina", "Emily", "Dave", "Eve", "Riccardo"]:
         selected_voice = "Alice"
+    
+    if has_cyrillic(llm_message):
+        selected_voice = "Nikolaev"
 
     # Voice mapping dictionary
     voice_mapping = {
