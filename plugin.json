@@ -1,9 +1,9 @@
 {
     "name": "Mycroft Cat",
-    "description": "Makes possible the cat to be able to speak.",
+    "description": "Makes possible the cat to be able to speak using Google text-to-speech or mimic 3 engines.",
     "author_name": "Pazoff",
-    "tags": "Mycroft,Speech,Voice",
+    "tags": "Mycroft,Speech,Voice,gTTS,mimic3",
     "plugin_url": "https://github.com/pazoff/Mycroft-Cat",
     "thumb": "https://github.com/pazoff/Mycroft-Cat/blob/main/Mimic_color_600px.png?raw=true",
-    "version": "0.0.2"
+    "version": "0.0.3"
 }
