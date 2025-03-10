@@ -7,10 +7,12 @@ Turn ★ into ⭐ (top-right corner) if you like the project!
 <img src="https://raw.githubusercontent.com/cheshire-cat-ai/.github/main/profile/ccat_art.png" alt="Cheshire Cat" width="50%">
 
 A plugin that makes possible the [Cheshire Cat](https://github.com/cheshire-cat-ai) to be able to speak.
+- **Mimic 3:** is **NOT** updated for a long time and it is **NOT** working correctly. You probabbly want to use [Piper-Cat](https://github.com/pazoff/Piper-Cat) plugin instead.
 
 ## This plugin uses Mycroft Mimic 3 for voice synthesis on your computer
 <img src="https://github.com/pazoff/Mycroft-Cat/blob/main/Mimic_color_600px.png?raw=true" alt="Mimic 3" width="12%">
-
+ 
+ - **Mimic 3:** is **NOT** updated for a long time and it is **NOT** working correctly. You probabbly want to use [Piper-Cat](https://github.com/pazoff/Piper-Cat) plugin instead.
  - **Mimic 3:** [Documentation](https://mycroft-ai.gitbook.io/docs/mycroft-technologies/mimic-tts/mimic-3)
 
 <img src="https://raw.githubusercontent.com/pazoff/Mycroft-Cat/main/cat-screenshot.png" alt="Cheshire Cat" width="60%">
